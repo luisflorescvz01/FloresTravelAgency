@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell($a = Get-Item \"C:\\\\Users\\\\luisf\\\\Downloads\\\\FloresTravel.jsx\"; $b = Get-Item \"src\\\\FloresTravel.jsx\"; \"$\\($a.Length\\) bytes \\(Downloads, $\\($a.LastWriteTime\\)\\)\"; \"$\\($b.Length\\) bytes \\(project, $\\($b.LastWriteTime\\)\\)\"; $ha = Get-FileHash $a.FullName; $hb = Get-FileHash $b.FullName; \"Same content: $\\($ha.Hash -eq $hb.Hash\\)\")",
+      "PowerShell(npm run build)",
+      "PowerShell(npm install firebase)",
+      "PowerShell(firebase --version)",
+      "PowerShell(npx firebase-tools --version)",
+      "PowerShell(npx firebase-tools login:list)",
+      "PowerShell(npx firebase-tools deploy)",
+      "PowerShell($r = Invoke-WebRequest -Uri \"https://florestravelagency-4245e.web.app\" -UseBasicParsing; \"Status: $\\($r.StatusCode\\)\"; \"Title present: $\\($r.Content -match 'Flores Travel Agency'\\)\"; \"App script present: $\\($r.Content -match 'assets/index-'\\)\")",
+      "PowerShell(npx firebase-tools deploy --only hosting)",
+      "PowerShell(cmdkey --% /delete:\"GitHub - https://api.github.com/luisflorescvz01\")"
+    ]
+  }
+}
